@@ -1,0 +1,20 @@
+{
+  "arima_definition": "ARIMA(p,d,q): phi(B)(1-B)^d y_t = c + theta(B)epsilon_t",
+  "sarima_definition": "SARIMA(p,d,q)(P,D,Q)_s: Phi(B^s)phi(B)(1-B)^d(1-B^s)^D y_t = c + Theta(B^s)theta(B)epsilon_t",
+  "selected_parameters": {
+    "p": 0,
+    "d": 1,
+    "q": 2,
+    "P": 0,
+    "D": 0,
+    "Q": 0,
+    "s": 12
+  },
+  "error_metric_formulas": {
+    "MAE": "MAE = (1/n) * sum(|y_t - yhat_t|)",
+    "RMSE": "RMSE = sqrt((1/n) * sum((y_t - yhat_t)^2))",
+    "MAPE": "MAPE = (100/n) * sum(|(y_t - yhat_t)/y_t|)",
+    "AIC": "AIC = 2k - 2ln(L)",
+    "BIC": "BIC = k ln(n) - 2ln(L)"
+  }
+}
